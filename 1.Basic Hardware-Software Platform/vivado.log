@@ -68,3 +68,98 @@ launch_sdk -workspace {C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM
 INFO: [Vivado 12-393] Launching SDK...
 INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.sdk -hwspec C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.sdk/Cortex_A9_wrapper.hdf
 INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_bd_design {C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/Cortex_A9.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - sw_8bit
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - btns_5bit
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <Cortex_A9> from BD file <C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/Cortex_A9.bd>
+open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1666.816 ; gain = 0.000
+startgroup
+set_property -dict [list CONFIG.C_INTERRUPT_PRESENT {1}] [get_bd_cells btns_5bit]
+endgroup
+startgroup
+set_property -dict [list CONFIG.PCW_USE_FABRIC_INTERRUPT {1} CONFIG.PCW_IRQ_F2P_INTR {1}] [get_bd_cells processing_system7_0]
+endgroup
+connect_bd_net [get_bd_pins processing_system7_0/IRQ_F2P] [get_bd_pins btns_5bit/ip2intc_irpt]
+save_project_as Part2_Interrupts C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts -force
+Wrote  : <C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/Cortex_A9.bd> 
+save_project_as: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1806.297 ; gain = 0.000
+validate_bd_design
+WARNING: [BD 41-1771] Block interface /sw_8bit/GPIO has associated board param 'GPIO_BOARD_INTERFACE', which is set to board part interface 'sws_8bits'. This interface is connected to an external interface /sw_8bits, whose name 'sw_8bits' does not match with the board interface name 'sws_8bits'.
+This is a visual-only issue - this interface /sw_8bit/GPIO will be connected to board interface 'sws_8bits'. If desired, please change the name of this port /sw_8bits manually.
+validate_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1806.297 ; gain = 0.000
+reset_run Cortex_A9_processing_system7_0_0_synth_1
+reset_run Cortex_A9_axi_gpio_0_1_synth_1
+reset_run synth_1
+make_wrapper -files [get_files C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/Cortex_A9.bd] -top
+INFO: [BD 41-1662] The design 'Cortex_A9.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-1771] Block interface /sw_8bit/GPIO has associated board param 'GPIO_BOARD_INTERFACE', which is set to board part interface 'sws_8bits'. This interface is connected to an external interface /sw_8bits, whose name 'sw_8bits' does not match with the board interface name 'sws_8bits'.
+This is a visual-only issue - this interface /sw_8bit/GPIO will be connected to board interface 'sws_8bits'. If desired, please change the name of this port /sw_8bits manually.
+Verilog Output written to : C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/hdl/Cortex_A9.v
+Verilog Output written to : C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/hdl/Cortex_A9_wrapper.v
+Wrote  : <C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/Cortex_A9.bd> 
+launch_runs impl_1 -jobs 2
+INFO: [BD 41-1662] The design 'Cortex_A9.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-1771] Block interface /sw_8bit/GPIO has associated board param 'GPIO_BOARD_INTERFACE', which is set to board part interface 'sws_8bits'. This interface is connected to an external interface /sw_8bits, whose name 'sw_8bits' does not match with the board interface name 'sws_8bits'.
+This is a visual-only issue - this interface /sw_8bit/GPIO will be connected to board interface 'sws_8bits'. If desired, please change the name of this port /sw_8bits manually.
+Verilog Output written to : C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/hdl/Cortex_A9.v
+Verilog Output written to : C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/hdl/Cortex_A9_wrapper.v
+WARNING: [xilinx.com:ip:processing_system7:5.5-1] Cortex_A9_processing_system7_0_0: The Zynq BFM requires an AXI BFM license to run. Please ensure that you have purchased and setup the AXI BFM license prior to running simulation with this block. Please contact your Xilinx sales office for more information on purchasing this license
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sw_8bit .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block btns_5bit .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/hw_handoff/Cortex_A9.hwh
+Generated Block Design Tcl file C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/hw_handoff/Cortex_A9_bd.tcl
+Generated Hardware Definition File C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/hdl/Cortex_A9.hwdef
+[Mon Mar 27 13:21:21 2017] Launched Cortex_A9_processing_system7_0_0_synth_1, Cortex_A9_axi_gpio_0_1_synth_1, Cortex_A9_auto_pc_0_synth_1, synth_1...
+Run output will be captured here:
+Cortex_A9_processing_system7_0_0_synth_1: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/Cortex_A9_processing_system7_0_0_synth_1/runme.log
+Cortex_A9_axi_gpio_0_1_synth_1: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/Cortex_A9_axi_gpio_0_1_synth_1/runme.log
+Cortex_A9_auto_pc_0_synth_1: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/Cortex_A9_auto_pc_0_synth_1/runme.log
+synth_1: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/synth_1/runme.log
+[Mon Mar 27 13:21:21 2017] Launched impl_1...
+Run output will be captured here: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1875.910 ; gain = 62.301
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Mon Mar 27 13:32:41 2017] Launched impl_1...
+Run output will be captured here: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/runme.log
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/Cortex_A9.bd]
+refresh_design
+INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bit/gpio_io_i[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:6204]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bit/gpio_io_i[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:6211]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bit/gpio_io_i[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:6218]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bit/gpio_io_i[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:6225]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bit/gpio_io_i[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:6232]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5151]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5158]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5165]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5172]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5179]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5186]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5193]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5200]
+Parsing XDC File [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/.Xil/Vivado-6332-SURFACE/dcp/Cortex_A9_wrapper_early.xdc]
+Finished Parsing XDC File [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/.Xil/Vivado-6332-SURFACE/dcp/Cortex_A9_wrapper_early.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1878.945 ; gain = 0.000
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1878.945 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:25 . Memory (MB): peak = 1881.602 ; gain = 5.691
+file copy -force C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/Cortex_A9_wrapper.sysdef C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.sdk/Cortex_A9_wrapper.hdf
+
+file copy -force C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/Cortex_A9_wrapper.sysdef C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.sdk/Cortex_A9_wrapper.hdf
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 27 16:26:12 2017...

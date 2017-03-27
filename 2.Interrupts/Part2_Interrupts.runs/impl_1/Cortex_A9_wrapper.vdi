@@ -1,0 +1,528 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Mar 27 13:25:39 2017
+# Process ID: 6132
+# Current directory: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1
+# Command line: vivado.exe -log Cortex_A9_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Cortex_A9_wrapper.tcl -notrace
+# Log file: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/Cortex_A9_wrapper.vdi
+# Journal file: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Cortex_A9_wrapper.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_axi_gpio_0_1/Cortex_A9_axi_gpio_0_1.dcp' for cell 'Cortex_A9_i/btns_5bit'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_processing_system7_0_0/Cortex_A9_processing_system7_0_0.dcp' for cell 'Cortex_A9_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_rst_ps7_0_100M_1/Cortex_A9_rst_ps7_0_100M_1.dcp' for cell 'Cortex_A9_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_axi_gpio_0_0/Cortex_A9_axi_gpio_0_0.dcp' for cell 'Cortex_A9_i/sw_8bit'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_xbar_0/Cortex_A9_xbar_0.dcp' for cell 'Cortex_A9_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_auto_pc_0/Cortex_A9_auto_pc_0.dcp' for cell 'Cortex_A9_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bit/gpio_io_i[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:6204]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bit/gpio_io_i[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:6211]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bit/gpio_io_i[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:6218]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bit/gpio_io_i[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:6225]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bit/gpio_io_i[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:6232]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5151]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5158]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5165]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5172]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5179]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5186]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5193]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5200]
+Parsing XDC File [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_processing_system7_0_0/Cortex_A9_processing_system7_0_0.xdc] for cell 'Cortex_A9_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_processing_system7_0_0/Cortex_A9_processing_system7_0_0.xdc] for cell 'Cortex_A9_i/processing_system7_0/inst'
+Parsing XDC File [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_axi_gpio_0_0/Cortex_A9_axi_gpio_0_0_board.xdc] for cell 'Cortex_A9_i/sw_8bit/U0'
+Finished Parsing XDC File [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_axi_gpio_0_0/Cortex_A9_axi_gpio_0_0_board.xdc] for cell 'Cortex_A9_i/sw_8bit/U0'
+Parsing XDC File [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_axi_gpio_0_0/Cortex_A9_axi_gpio_0_0.xdc] for cell 'Cortex_A9_i/sw_8bit/U0'
+Finished Parsing XDC File [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_axi_gpio_0_0/Cortex_A9_axi_gpio_0_0.xdc] for cell 'Cortex_A9_i/sw_8bit/U0'
+Parsing XDC File [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_rst_ps7_0_100M_1/Cortex_A9_rst_ps7_0_100M_1_board.xdc] for cell 'Cortex_A9_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_rst_ps7_0_100M_1/Cortex_A9_rst_ps7_0_100M_1_board.xdc] for cell 'Cortex_A9_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_rst_ps7_0_100M_1/Cortex_A9_rst_ps7_0_100M_1.xdc] for cell 'Cortex_A9_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_rst_ps7_0_100M_1/Cortex_A9_rst_ps7_0_100M_1.xdc] for cell 'Cortex_A9_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_axi_gpio_0_1/Cortex_A9_axi_gpio_0_1_board.xdc] for cell 'Cortex_A9_i/btns_5bit/U0'
+Finished Parsing XDC File [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_axi_gpio_0_1/Cortex_A9_axi_gpio_0_1_board.xdc] for cell 'Cortex_A9_i/btns_5bit/U0'
+Parsing XDC File [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_axi_gpio_0_1/Cortex_A9_axi_gpio_0_1.xdc] for cell 'Cortex_A9_i/btns_5bit/U0'
+Finished Parsing XDC File [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_axi_gpio_0_1/Cortex_A9_axi_gpio_0_1.xdc] for cell 'Cortex_A9_i/btns_5bit/U0'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_processing_system7_0_0/Cortex_A9_processing_system7_0_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_axi_gpio_0_0/Cortex_A9_axi_gpio_0_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_rst_ps7_0_100M_1/Cortex_A9_rst_ps7_0_100M_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_axi_gpio_0_1/Cortex_A9_axi_gpio_0_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_xbar_0/Cortex_A9_xbar_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_auto_pc_0/Cortex_A9_auto_pc_0.dcp'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 545.988 ; gain = 299.840
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.964 . Memory (MB): peak = 556.207 ; gain = 10.219
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: 1606bb18a
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 20118852d
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1046.074 ; gain = 0.004
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 124 cells.
+Phase 2 Constant propagation | Checksum: 1b8444bb4
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1046.074 ; gain = 0.004
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 183 unconnected nets.
+INFO: [Opt 31-11] Eliminated 199 unconnected cells.
+Phase 3 Sweep | Checksum: 19f8b7cc0
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1046.074 ; gain = 0.004
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 4 BUFG optimization | Checksum: 236d1e3ad
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1046.074 ; gain = 0.004
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1046.074 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 236d1e3ad
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1046.074 ; gain = 0.004
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 236d1e3ad
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1046.074 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+34 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1046.074 ; gain = 500.086
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.160 . Memory (MB): peak = 1046.074 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/Cortex_A9_wrapper_opt.dcp' has been generated.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/Cortex_A9_wrapper_drc_opted.rpt.
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1046.074 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1046.074 ; gain = 0.000
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 117963b01
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1072.191 ; gain = 26.117
+
+Phase 1.2 Build Placer Netlist Model
+Phase 1.2 Build Placer Netlist Model | Checksum: 1dcb77389
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1072.191 ; gain = 26.117
+
+Phase 1.3 Constrain Clocks/Macros
+Phase 1.3 Constrain Clocks/Macros | Checksum: 1dcb77389
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1072.191 ; gain = 26.117
+Phase 1 Placer Initialization | Checksum: 1dcb77389
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1072.191 ; gain = 26.117
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 16966e98f
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1072.191 ; gain = 26.117
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 16966e98f
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1072.191 ; gain = 26.117
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: b991591b
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1072.191 ; gain = 26.117
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 12f11fb2f
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1072.191 ; gain = 26.117
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 12f11fb2f
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1072.191 ; gain = 26.117
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: f4c94544
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1072.191 ; gain = 26.117
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 1993e9163
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1072.191 ; gain = 26.117
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: e4deac6f
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1072.191 ; gain = 26.117
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: e4deac6f
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1072.191 ; gain = 26.117
+Phase 3 Detail Placement | Checksum: e4deac6f
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1072.191 ; gain = 26.117
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=4.109. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: d7e7ab4e
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1072.191 ; gain = 26.117
+Phase 4.1 Post Commit Optimization | Checksum: d7e7ab4e
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1072.191 ; gain = 26.117
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: d7e7ab4e
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1072.191 ; gain = 26.117
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: d7e7ab4e
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1072.191 ; gain = 26.117
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: e339b84d
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1072.191 ; gain = 26.117
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: e339b84d
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1072.191 ; gain = 26.117
+Ending Placer Task | Checksum: a38a6b4c
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1072.191 ; gain = 26.117
+INFO: [Common 17-83] Releasing license: Implementation
+50 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1072.191 ; gain = 26.117
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.513 . Memory (MB): peak = 1072.191 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/Cortex_A9_wrapper_placed.dcp' has been generated.
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.101 . Memory (MB): peak = 1072.191 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 1072.191 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1072.191 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 32731315 ConstDB: 0 ShapeSum: 71175837 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 1785eb2c4
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:41 . Memory (MB): peak = 1204.965 ; gain = 132.773
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 1785eb2c4
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:41 . Memory (MB): peak = 1204.965 ; gain = 132.773
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 1785eb2c4
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:41 . Memory (MB): peak = 1204.965 ; gain = 132.773
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 1785eb2c4
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:41 . Memory (MB): peak = 1204.965 ; gain = 132.773
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 13a920ab2
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:43 . Memory (MB): peak = 1213.074 ; gain = 140.883
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=4.050  | TNS=0.000  | WHS=-0.190 | THS=-21.512|
+
+Phase 2 Router Initialization | Checksum: 2040d8717
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:43 . Memory (MB): peak = 1213.074 ; gain = 140.883
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 255862f68
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:44 . Memory (MB): peak = 1213.074 ; gain = 140.883
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 120
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: 22c4e50b4
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:45 . Memory (MB): peak = 1213.074 ; gain = 140.883
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.256  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 22366202d
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:45 . Memory (MB): peak = 1213.074 ; gain = 140.883
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.2.1 Update Timing
+Phase 4.2.1 Update Timing | Checksum: f40fc821
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:45 . Memory (MB): peak = 1213.074 ; gain = 140.883
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.256  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1e967b3a5
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:45 . Memory (MB): peak = 1213.074 ; gain = 140.883
+Phase 4 Rip-up And Reroute | Checksum: 1e967b3a5
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:45 . Memory (MB): peak = 1213.074 ; gain = 140.883
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 136c226f7
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:45 . Memory (MB): peak = 1213.074 ; gain = 140.883
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.256  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: 136c226f7
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:45 . Memory (MB): peak = 1213.074 ; gain = 140.883
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 136c226f7
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:45 . Memory (MB): peak = 1213.074 ; gain = 140.883
+Phase 5 Delay and Skew Optimization | Checksum: 136c226f7
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:45 . Memory (MB): peak = 1213.074 ; gain = 140.883
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 16183c4c9
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:45 . Memory (MB): peak = 1213.074 ; gain = 140.883
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.256  | TNS=0.000  | WHS=0.041  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 21278d67d
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:45 . Memory (MB): peak = 1213.074 ; gain = 140.883
+Phase 6 Post Hold Fix | Checksum: 21278d67d
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:45 . Memory (MB): peak = 1213.074 ; gain = 140.883
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.332816 %
+  Global Horizontal Routing Utilization  = 0.29902 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 1e080a596
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:46 . Memory (MB): peak = 1213.074 ; gain = 140.883
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1e080a596
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:46 . Memory (MB): peak = 1213.074 ; gain = 140.883
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1c2d8d153
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:46 . Memory (MB): peak = 1213.074 ; gain = 140.883
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=3.256  | TNS=0.000  | WHS=0.041  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 1c2d8d153
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:46 . Memory (MB): peak = 1213.074 ; gain = 140.883
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:46 . Memory (MB): peak = 1213.074 ; gain = 140.883
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+65 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:59 ; elapsed = 00:00:49 . Memory (MB): peak = 1213.074 ; gain = 140.883
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.684 . Memory (MB): peak = 1213.074 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/Cortex_A9_wrapper_routed.dcp' has been generated.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/Cortex_A9_wrapper_drc_routed.rpt.
+report_drc: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1213.074 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/Cortex_A9_wrapper_methodology_drc_routed.rpt.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Command: report_power -file Cortex_A9_wrapper_power_routed.rpt -pb Cortex_A9_wrapper_power_summary_routed.pb -rpx Cortex_A9_wrapper_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+75 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 27 13:27:42 2017...
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Mar 27 13:32:53 2017
+# Process ID: 736
+# Current directory: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1
+# Command line: vivado.exe -log Cortex_A9_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Cortex_A9_wrapper.tcl -notrace
+# Log file: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/Cortex_A9_wrapper.vdi
+# Journal file: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Cortex_A9_wrapper.tcl -notrace
+Command: open_checkpoint Cortex_A9_wrapper_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 215.934 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bit/gpio_io_i[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:6204]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bit/gpio_io_i[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:6211]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bit/gpio_io_i[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:6218]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bit/gpio_io_i[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:6225]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bit/gpio_io_i[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:6232]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5151]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5158]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5165]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5172]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5179]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5186]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5193]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-6132-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5200]
+Parsing XDC File [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-736-SURFACE/dcp/Cortex_A9_wrapper_early.xdc]
+Finished Parsing XDC File [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/2.Interrupts/Part2_Interrupts.runs/impl_1/.Xil/Vivado-736-SURFACE/dcp/Cortex_A9_wrapper_early.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.422 . Memory (MB): peak = 534.371 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.423 . Memory (MB): peak = 534.371 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.4 (64-bit) build 1756540
+open_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 534.371 ; gain = 324.242
+Command: write_bitstream -force -no_partial_bitfile Cortex_A9_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./Cortex_A9_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+14 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 917.488 ; gain = 383.117
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 27 13:33:43 2017...

@@ -1,0 +1,5 @@
+12:21:47 INFO  : Registering command handlers for SDK TCF services
+12:21:48 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\kmd17\Documents\GitHub\Embedded_Systems_lab2_ARM\2.Interrupts\temp_xsdb_launch_script.tcl
+12:21:50 INFO  : XSCT server has started successfully.
+12:21:50 INFO  : Successfully done setting XSCT server connection channel  
+12:21:50 INFO  : Successfully done setting SDK workspace  

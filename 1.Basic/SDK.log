@@ -26,3 +26,13 @@ java.io.FileNotFoundException: C:\Users\kmd17\Documents\GitHub\Embedded_Systems_
 11:11:29 INFO  : Successfully done setting XSCT server connection channel  
 11:11:29 INFO  : Successfully done setting SDK workspace  
 11:11:39 INFO  : Registering command handlers for SDK TCF services
+12:20:49 INFO  : Registering command handlers for SDK TCF services
+12:20:50 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\kmd17\Documents\GitHub\Embedded_Systems_lab2_ARM\1.Basic\temp_xsdb_launch_script.tcl
+12:20:54 INFO  : XSCT server has started successfully.
+12:20:57 INFO  : Successfully done setting XSCT server connection channel  
+12:20:57 INFO  : Successfully done setting SDK workspace  
+12:29:59 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\kmd17\Documents\GitHub\Embedded_Systems_lab2_ARM\1.Basic\temp_xsdb_launch_script.tcl
+12:30:00 INFO  : XSCT server has started successfully.
+12:30:00 INFO  : Successfully done setting XSCT server connection channel  
+12:30:00 INFO  : Successfully done setting SDK workspace  
+12:30:05 INFO  : Registering command handlers for SDK TCF services
