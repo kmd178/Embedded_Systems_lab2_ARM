@@ -1,0 +1,496 @@
+
+*** Running vivado
+    with args -log Cortex_A9_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source Cortex_A9_wrapper.tcl -notrace
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source Cortex_A9_wrapper.tcl -notrace
+Command: open_checkpoint {C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.runs/impl_1/Cortex_A9_wrapper.dcp}
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 215.543 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bit/gpio_io_i[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1980-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:4128]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bit/gpio_io_i[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1980-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:4135]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bit/gpio_io_i[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1980-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:4142]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bit/gpio_io_i[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1980-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:4149]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bit/gpio_io_i[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1980-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:4156]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1980-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5151]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1980-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5158]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1980-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5165]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1980-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5172]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1980-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5179]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1980-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5186]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1980-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5193]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1980-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5200]
+Parsing XDC File [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.runs/impl_1/.Xil/Vivado-10672-SURFACE/dcp/Cortex_A9_wrapper_board.xdc]
+Finished Parsing XDC File [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.runs/impl_1/.Xil/Vivado-10672-SURFACE/dcp/Cortex_A9_wrapper_board.xdc]
+Parsing XDC File [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.runs/impl_1/.Xil/Vivado-10672-SURFACE/dcp/Cortex_A9_wrapper_early.xdc]
+Finished Parsing XDC File [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.runs/impl_1/.Xil/Vivado-10672-SURFACE/dcp/Cortex_A9_wrapper_early.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.281 . Memory (MB): peak = 534.898 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.281 . Memory (MB): peak = 534.898 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.4 (64-bit) build 1756540
+open_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 534.898 ; gain = 325.219
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.578 . Memory (MB): peak = 544.629 ; gain = 9.730
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: 24358c389
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 159d07aba
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.297 . Memory (MB): peak = 1027.391 ; gain = 0.000
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 122 cells.
+Phase 2 Constant propagation | Checksum: 24e5f1f1b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.594 . Memory (MB): peak = 1027.391 ; gain = 0.000
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 189 unconnected nets.
+INFO: [Opt 31-11] Eliminated 216 unconnected cells.
+Phase 3 Sweep | Checksum: 259a73bff
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1027.391 ; gain = 0.000
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 4 BUFG optimization | Checksum: 280dea03e
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1027.391 ; gain = 0.000
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1027.391 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 280dea03e
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1027.391 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 280dea03e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1027.391 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+22 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1027.391 ; gain = 492.492
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.144 . Memory (MB): peak = 1027.391 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.runs/impl_1/Cortex_A9_wrapper_opt.dcp' has been generated.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.runs/impl_1/Cortex_A9_wrapper_drc_opted.rpt.
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1027.391 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1027.391 ; gain = 0.000
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1c88004c8
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1053.047 ; gain = 25.656
+
+Phase 1.2 Build Placer Netlist Model
+Phase 1.2 Build Placer Netlist Model | Checksum: 211d940fa
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1053.047 ; gain = 25.656
+
+Phase 1.3 Constrain Clocks/Macros
+Phase 1.3 Constrain Clocks/Macros | Checksum: 211d940fa
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1053.047 ; gain = 25.656
+Phase 1 Placer Initialization | Checksum: 211d940fa
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1053.047 ; gain = 25.656
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 15d1a685a
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1053.047 ; gain = 25.656
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 15d1a685a
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1053.047 ; gain = 25.656
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: b4009f5b
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1053.047 ; gain = 25.656
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: ffa7512d
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1053.047 ; gain = 25.656
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: ffa7512d
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1053.047 ; gain = 25.656
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: a1c825af
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1053.047 ; gain = 25.656
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 14fb38ee9
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1053.047 ; gain = 25.656
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 16ec8b454
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1053.047 ; gain = 25.656
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 16ec8b454
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1053.047 ; gain = 25.656
+Phase 3 Detail Placement | Checksum: 16ec8b454
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1053.047 ; gain = 25.656
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=3.995. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1ac2e01da
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1053.047 ; gain = 25.656
+Phase 4.1 Post Commit Optimization | Checksum: 1ac2e01da
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1053.047 ; gain = 25.656
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1ac2e01da
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1053.047 ; gain = 25.656
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 1ac2e01da
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1053.047 ; gain = 25.656
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 1927ae050
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1053.047 ; gain = 25.656
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1927ae050
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1053.047 ; gain = 25.656
+Ending Placer Task | Checksum: b8049521
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1053.047 ; gain = 25.656
+INFO: [Common 17-83] Releasing license: Implementation
+38 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1053.047 ; gain = 25.656
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.344 . Memory (MB): peak = 1053.047 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.runs/impl_1/Cortex_A9_wrapper_placed.dcp' has been generated.
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 1053.047 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1053.047 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1053.047 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 987fb779 ConstDB: 0 ShapeSum: 1f84dda8 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 101302fd5
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:34 . Memory (MB): peak = 1193.480 ; gain = 140.434
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 101302fd5
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:34 . Memory (MB): peak = 1193.480 ; gain = 140.434
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 101302fd5
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:34 . Memory (MB): peak = 1193.480 ; gain = 140.434
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 101302fd5
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:34 . Memory (MB): peak = 1193.480 ; gain = 140.434
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1e101bd87
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:35 . Memory (MB): peak = 1201.563 ; gain = 148.516
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.992  | TNS=0.000  | WHS=-0.167 | THS=-19.046|
+
+Phase 2 Router Initialization | Checksum: 1170f0dec
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:35 . Memory (MB): peak = 1201.563 ; gain = 148.516
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1899cb3f1
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:36 . Memory (MB): peak = 1201.563 ; gain = 148.516
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 80
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: 19e397a59
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:36 . Memory (MB): peak = 1201.563 ; gain = 148.516
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.423  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 18f162546
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:36 . Memory (MB): peak = 1201.563 ; gain = 148.516
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.2.1 Update Timing
+Phase 4.2.1 Update Timing | Checksum: 20f5379cc
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:36 . Memory (MB): peak = 1201.563 ; gain = 148.516
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.423  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: e2203ba6
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:36 . Memory (MB): peak = 1201.563 ; gain = 148.516
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 0
+
+Phase 4.3.1 Update Timing
+Phase 4.3.1 Update Timing | Checksum: 1654c4281
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:36 . Memory (MB): peak = 1201.563 ; gain = 148.516
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.423  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 1c912a2ea
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:36 . Memory (MB): peak = 1201.563 ; gain = 148.516
+
+Phase 4.4 Global Iteration 3
+ Number of Nodes with overlaps = 0
+
+Phase 4.4.1 Update Timing
+Phase 4.4.1 Update Timing | Checksum: edaa2e4d
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:36 . Memory (MB): peak = 1201.563 ; gain = 148.516
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.423  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.4 Global Iteration 3 | Checksum: 1a19876aa
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:36 . Memory (MB): peak = 1201.563 ; gain = 148.516
+
+Phase 4.5 Global Iteration 4
+ Number of Nodes with overlaps = 0
+
+Phase 4.5.1 Update Timing
+Phase 4.5.1 Update Timing | Checksum: 125ab94b9
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:36 . Memory (MB): peak = 1201.563 ; gain = 148.516
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.423  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.5 Global Iteration 4 | Checksum: 125ab94b9
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:36 . Memory (MB): peak = 1201.563 ; gain = 148.516
+Phase 4 Rip-up And Reroute | Checksum: 125ab94b9
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:36 . Memory (MB): peak = 1201.563 ; gain = 148.516
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 125ab94b9
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:36 . Memory (MB): peak = 1201.563 ; gain = 148.516
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 125ab94b9
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:36 . Memory (MB): peak = 1201.563 ; gain = 148.516
+Phase 5 Delay and Skew Optimization | Checksum: 125ab94b9
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:36 . Memory (MB): peak = 1201.563 ; gain = 148.516
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: aa081fc0
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:36 . Memory (MB): peak = 1201.563 ; gain = 148.516
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.538  | TNS=0.000  | WHS=0.075  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1367d57d0
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:36 . Memory (MB): peak = 1201.563 ; gain = 148.516
+Phase 6 Post Hold Fix | Checksum: 1367d57d0
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:36 . Memory (MB): peak = 1201.563 ; gain = 148.516
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.182873 %
+  Global Horizontal Routing Utilization  = 0.263776 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 98a2b0c4
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:37 . Memory (MB): peak = 1201.563 ; gain = 148.516
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 98a2b0c4
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:37 . Memory (MB): peak = 1201.563 ; gain = 148.516
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: cf7a4470
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:37 . Memory (MB): peak = 1201.563 ; gain = 148.516
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=3.538  | TNS=0.000  | WHS=0.075  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: cf7a4470
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:37 . Memory (MB): peak = 1201.563 ; gain = 148.516
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:37 . Memory (MB): peak = 1201.563 ; gain = 148.516
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+55 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:39 . Memory (MB): peak = 1201.563 ; gain = 148.516
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.438 . Memory (MB): peak = 1201.563 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.runs/impl_1/Cortex_A9_wrapper_routed.dcp' has been generated.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.runs/impl_1/Cortex_A9_wrapper_drc_routed.rpt.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.runs/impl_1/Cortex_A9_wrapper_methodology_drc_routed.rpt.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Command: report_power -file Cortex_A9_wrapper_power_routed.rpt -pb Cortex_A9_wrapper_power_summary_routed.pb -rpx Cortex_A9_wrapper_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+65 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+Command: write_bitstream -force -no_partial_bitfile Cortex_A9_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./Cortex_A9_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+72 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1563.758 ; gain = 353.063
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 25 19:00:10 2017...

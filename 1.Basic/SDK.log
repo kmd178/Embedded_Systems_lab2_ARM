@@ -1,0 +1,28 @@
+11:06:43 INFO  : Registering command handlers for SDK TCF services
+11:06:44 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\kmd17\Documents\GitHub\Embedded_Systems_lab2_ARM\1.Basic\temp_xsdb_launch_script.tcl
+11:06:46 INFO  : XSCT server has started successfully.
+11:06:46 INFO  : Successfully done setting XSCT server connection channel  
+11:06:48 INFO  : Successfully done setting SDK workspace  
+11:06:48 INFO  : Processing command line option -hwspec C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic.
+11:06:48 ERROR : Error occurred while creating hardware platform 1_hw_platform_0 from sysdef
+java.io.FileNotFoundException: C:\Users\kmd17\Documents\GitHub\Embedded_Systems_lab2_ARM\1.Basic (Access is denied)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:100)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:266)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:210)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:197)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:171)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:564)
+	at com.xilinx.sdk.startup.InitSDK.access$9(InitSDK.java:546)
+	at com.xilinx.sdk.startup.InitSDK$14.run(InitSDK.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+11:06:48 ERROR : Unable to create Hardware Specification Project with specification file: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic
+11:07:24 INFO  : Project 'Cortex_A9_wrapper_hw_platform_0' created. You can now create BSPs and application projects targeting this hardware platform.
+11:11:25 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\kmd17\Documents\GitHub\Embedded_Systems_lab2_ARM\1.Basic\temp_xsdb_launch_script.tcl
+11:11:27 INFO  : XSCT server has started successfully.
+11:11:29 INFO  : Successfully done setting XSCT server connection channel  
+11:11:29 INFO  : Successfully done setting SDK workspace  
+11:11:39 INFO  : Registering command handlers for SDK TCF services

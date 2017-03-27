@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sat Mar 25 11:24:04 2017
+# Process ID: 2796
+# Current directory: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.runs/Cortex_A9_rst_ps7_0_100M_1_synth_1
+# Command line: vivado.exe -log Cortex_A9_rst_ps7_0_100M_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Cortex_A9_rst_ps7_0_100M_1.tcl
+# Log file: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.runs/Cortex_A9_rst_ps7_0_100M_1_synth_1/Cortex_A9_rst_ps7_0_100M_1.vds
+# Journal file: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.runs/Cortex_A9_rst_ps7_0_100M_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Cortex_A9_rst_ps7_0_100M_1.tcl -notrace

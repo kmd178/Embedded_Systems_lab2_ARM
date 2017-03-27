@@ -1,0 +1,112 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Sat Mar 25 18:58:58 2017
+| Host         : SURFACE running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Cortex_A9_wrapper_control_sets_placed.rpt
+| Design       : Cortex_A9_wrapper
+| Device       : xc7z020
+----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    43 |
+| Unused register locations in slices containing registers |   103 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             192 |           61 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             137 |           47 |
+| Yes          | No                    | No                     |             421 |           94 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              75 |           24 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|                   Clock Signal                   |                                                                          Enable Signal                                                                         |                                                              Set/Reset Signal                                                             | Slice Load Count | Bel Load Count |
++--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 | Cortex_A9_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/bresp_push                               |                                                                                                                                           |                1 |              2 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                                | Cortex_A9_i/sw_8bit/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/clear                                                                           |                1 |              4 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                                | Cortex_A9_i/btns_5bit/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/clear                                                                         |                2 |              4 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                                | Cortex_A9_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_valid_i_reg_0                |                3 |              4 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                                | Cortex_A9_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/s_ready_i_reg_0                |                3 |              4 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 | Cortex_A9_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/E[0]                                  | Cortex_A9_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/axlen_cnt_reg[7] |                1 |              4 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 | Cortex_A9_i/sw_8bit/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i[8]_i_1_n_0                                                                             | Cortex_A9_i/sw_8bit/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/SR                                                                              |                1 |              4 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 | Cortex_A9_i/btns_5bit/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i[8]_i_1_n_0                                                                           | Cortex_A9_i/btns_5bit/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/SR                                                                            |                2 |              4 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 | Cortex_A9_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/axlen_cnt_reg[3][0]                   | Cortex_A9_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/axlen_cnt_reg[7] |                1 |              4 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                                | Cortex_A9_i/btns_5bit/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Not_Dual.READ_REG_GEN[0].GPIO_DBus_i_reg[27]                        |                2 |              5 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                                | Cortex_A9_i/rst_ps7_0_100M/U0/EXT_LPF/lpf_int                                                                                             |                2 |              5 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 | Cortex_A9_i/btns_5bit/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Not_Dual.gpio_OE_reg[0][0]                                                               | Cortex_A9_i/btns_5bit/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/SR                                                                            |                2 |              5 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 | Cortex_A9_i/btns_5bit/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i[4]_i_1_n_0                                                                           | Cortex_A9_i/btns_5bit/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/SR                                                                            |                1 |              5 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 | Cortex_A9_i/rst_ps7_0_100M/U0/SEQ/seq_cnt_en                                                                                                                   | Cortex_A9_i/rst_ps7_0_100M/U0/SEQ/SEQ_COUNTER/clear                                                                                       |                1 |              6 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 | Cortex_A9_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/mhandshake_r                                        | Cortex_A9_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/SR[0]               |                3 |              8 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                                | Cortex_A9_i/sw_8bit/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Not_Dual.READ_REG_GEN[0].GPIO_DBus_i_reg[24]                          |                4 |              8 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 | Cortex_A9_i/sw_8bit/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Not_Dual.gpio_OE_reg[0][0]                                                                 | Cortex_A9_i/sw_8bit/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/SR                                                                              |                3 |              8 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 | Cortex_A9_i/sw_8bit/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i[7]_i_1_n_0                                                                             | Cortex_A9_i/sw_8bit/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/SR                                                                              |                1 |              8 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 | Cortex_A9_i/ps7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/reg_slice_r/aa_rready                                                                          |                                                                                                                                           |                3 |              8 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                                | Cortex_A9_i/ps7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/SR[0]                                                   |                5 |             11 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 | Cortex_A9_i/ps7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/E[0]                                                                         |                                                                                                                                           |                3 |             11 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 | Cortex_A9_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/axaddr_incr_reg[11]                   |                                                                                                                                           |                3 |             12 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 | Cortex_A9_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/E[0]                                  |                                                                                                                                           |                5 |             12 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 | Cortex_A9_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr[0]_i_1_n_0 |                                                                                                                                           |                3 |             12 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 | Cortex_A9_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/wrap_boundary_axaddr_r_reg[0][0]      |                                                                                                                                           |                6 |             12 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 | Cortex_A9_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_push_r                                            |                                                                                                                                           |                4 |             13 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 | Cortex_A9_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/p_1_in                                               |                                                                                                                                           |                2 |             14 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 | Cortex_A9_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/skid_buffer_reg[0]_0                                 |                                                                                                                                           |                2 |             14 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 | Cortex_A9_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/b_push                                |                                                                                                                                           |                3 |             16 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                                | Cortex_A9_i/btns_5bit/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/SR                                                                            |                5 |             16 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 | Cortex_A9_i/ps7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/p_0_in1_in                                                                   | Cortex_A9_i/ps7_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/SR[0]                                                   |                8 |             19 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                                | Cortex_A9_i/sw_8bit/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/SR                                                                              |                5 |             19 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 | Cortex_A9_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/E[0]                                  |                                                                                                                                           |                8 |             20 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 | Cortex_A9_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/axlen_cnt_reg[3][0]                   |                                                                                                                                           |                8 |             20 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 | Cortex_A9_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/wr_en0                               |                                                                                                                                           |                9 |             34 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 | Cortex_A9_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/r_pipe/p_1_in                                               |                                                                                                                                           |                7 |             47 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 | Cortex_A9_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/r_pipe/skid_buffer_reg[0]_0                                 |                                                                                                                                           |                8 |             47 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 | Cortex_A9_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/m_payload_i_reg[0]_1[0]               |                                                                                                                                           |                9 |             48 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 | Cortex_A9_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/m_payload_i_reg[0][0]                 |                                                                                                                                           |                8 |             48 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 | Cortex_A9_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/s_axi_arready                                       |                                                                                                                                           |               10 |             48 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 | Cortex_A9_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/s_axi_awready                                       |                                                                                                                                           |                9 |             48 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                                | Cortex_A9_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/areset_d1                                     |               15 |             57 |
+|  Cortex_A9_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                                |                                                                                                                                           |               62 |            193 |
++--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 2      |                     1 |
+| 4      |                     8 |
+| 5      |                     4 |
+| 6      |                     1 |
+| 8      |                     5 |
+| 11     |                     2 |
+| 12     |                     4 |
+| 13     |                     1 |
+| 14     |                     2 |
+| 16+    |                    15 |
++--------+-----------------------+
+
+

@@ -1,0 +1,65 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun Mar 26 12:08:35 2017
+# Process ID: 5916
+# Current directory: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9128 C:\Users\kmd17\Documents\GitHub\Embedded_Systems_lab2_ARM\1.Basic Hardware-Software Platform\lab2_simple_arm.xpr
+# Log file: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/vivado.log
+# Journal file: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 840.859 ; gain = 181.113
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bit/gpio_io_i[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1980-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:4128]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bit/gpio_io_i[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1980-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:4135]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bit/gpio_io_i[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1980-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:4142]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bit/gpio_io_i[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1980-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:4149]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/btns_5bit/gpio_io_i[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1980-SURFACE/dcp_5/Cortex_A9_axi_gpio_0_1.edf:4156]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1980-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5151]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1980-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5158]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1980-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5165]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1980-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5172]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1980-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5179]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1980-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5186]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1980-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5193]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'Cortex_A9_i/sw_8bit/gpio_io_i[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/kmd17/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-1980-SURFACE/dcp_3/Cortex_A9_axi_gpio_0_0.edf:5200]
+Parsing XDC File [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/.Xil/Vivado-5916-SURFACE/dcp/Cortex_A9_wrapper_board.xdc]
+Finished Parsing XDC File [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/.Xil/Vivado-5916-SURFACE/dcp/Cortex_A9_wrapper_board.xdc]
+Parsing XDC File [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/.Xil/Vivado-5916-SURFACE/dcp/Cortex_A9_wrapper_early.xdc]
+Finished Parsing XDC File [C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/.Xil/Vivado-5916-SURFACE/dcp/Cortex_A9_wrapper_early.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.485 . Memory (MB): peak = 1085.770 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.485 . Memory (MB): peak = 1085.770 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:22 ; elapsed = 00:00:17 . Memory (MB): peak = 1208.504 ; gain = 362.289
+file mkdir {C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.sdk}
+file copy -force {C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.runs/impl_1/Cortex_A9_wrapper.sysdef} {C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.sdk/Cortex_A9_wrapper.hdf}
+
+launch_sdk -workspace {C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.sdk} -hwspec {C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.sdk/Cortex_A9_wrapper.hdf}
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.sdk -hwspec C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.sdk/Cortex_A9_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+file copy -force {C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.runs/impl_1/Cortex_A9_wrapper.sysdef} C:/Users/kmd17/Desktop/Cortex_A9_wrapper.hdf
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 27 01:04:25 2017...

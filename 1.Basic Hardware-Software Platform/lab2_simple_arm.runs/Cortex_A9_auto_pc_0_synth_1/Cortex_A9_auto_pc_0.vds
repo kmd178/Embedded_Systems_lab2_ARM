@@ -1,0 +1,112 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sat Mar 25 11:24:56 2017
+# Process ID: 2536
+# Current directory: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.runs/Cortex_A9_auto_pc_0_synth_1
+# Command line: vivado.exe -log Cortex_A9_auto_pc_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Cortex_A9_auto_pc_0.tcl
+# Log file: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.runs/Cortex_A9_auto_pc_0_synth_1/Cortex_A9_auto_pc_0.vds
+# Journal file: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.runs/Cortex_A9_auto_pc_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Cortex_A9_auto_pc_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 344.262 ; gain = 134.176
+INFO: [Synth 8-638] synthesizing module 'Cortex_A9_auto_pc_0' [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_auto_pc_0/synth/Cortex_A9_auto_pc_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_axi_protocol_converter' [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4806]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_b2s' [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4224]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_b2s_aw_channel' [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3969]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_b2s_cmd_translator' [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3467]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_b2s_incr_cmd' [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3093]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_b2s_incr_cmd' (1#1) [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3093]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_b2s_wrap_cmd' [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2903]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_b2s_wrap_cmd' (2#1) [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2903]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_b2s_cmd_translator' (3#1) [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3467]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_b2s_wr_cmd_fsm' [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3225]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_b2s_wr_cmd_fsm' (4#1) [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3225]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_b2s_aw_channel' (5#1) [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3969]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_b2s_b_channel' [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3609]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_b2s_simple_fifo' [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_b2s_simple_fifo' (6#1) [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_b2s_simple_fifo__parameterized0' [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_b2s_simple_fifo__parameterized0' (6#1) [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_b2s_b_channel' (7#1) [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3609]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_b2s_ar_channel' [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4080]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_b2s_rd_cmd_fsm' [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3336]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_b2s_rd_cmd_fsm' (8#1) [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3336]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_b2s_ar_channel' (9#1) [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4080]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_b2s_r_channel' [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3809]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_b2s_simple_fifo__parameterized1' [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_b2s_simple_fifo__parameterized1' (9#1) [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_11_b2s_simple_fifo__parameterized2' [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_b2s_simple_fifo__parameterized2' (9#1) [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_b2s_r_channel' (10#1) [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3809]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axi_register_slice' [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (11#1) [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice' [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice' (12#1) [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized0' [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized0' (12#1) [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized1' [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized1' (12#1) [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized2' [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized2' (12#1) [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (13#1) [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axi_register_slice' (14#1) [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axi_register_slice__parameterized0' [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (14#1) [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized3' [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized3' (14#1) [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized4' [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized4' (14#1) [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized5' [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized5' (14#1) [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized6' [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized6' (14#1) [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized7' [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized7' (14#1) [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (14#1) [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axi_register_slice__parameterized0' (14#1) [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_b2s' (15#1) [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4224]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_11_axi_protocol_converter' (16#1) [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ipshared/df1b/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4806]
+INFO: [Synth 8-256] done synthesizing module 'Cortex_A9_auto_pc_0' (17#1) [c:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.srcs/sources_1/bd/Cortex_A9/ip/Cortex_A9_auto_pc_0/synth/Cortex_A9_auto_pc_0.v:58]
+Finished RTL Elaboration : Time (s): cpu = 00:00:55 ; elapsed = 00:01:01 . Memory (MB): peak = 460.340 ; gain = 250.254
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:55 ; elapsed = 00:01:02 . Memory (MB): peak = 460.340 ; gain = 250.254
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.359 . Memory (MB): peak = 710.070 ; gain = 0.125
+Finished Constraint Validation : Time (s): cpu = 00:01:11 ; elapsed = 00:01:22 . Memory (MB): peak = 710.070 ; gain = 499.984
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:11 ; elapsed = 00:01:22 . Memory (MB): peak = 710.070 ; gain = 499.984
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:11 ; elapsed = 00:01:22 . Memory (MB): peak = 710.070 ; gain = 499.984
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:11 ; elapsed = 00:01:23 . Memory (MB): peak = 710.070 ; gain = 499.984
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:14 ; elapsed = 00:01:25 . Memory (MB): peak = 710.070 ; gain = 499.984
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:26 ; elapsed = 00:01:38 . Memory (MB): peak = 710.070 ; gain = 499.984
+Finished Timing Optimization : Time (s): cpu = 00:01:29 ; elapsed = 00:01:41 . Memory (MB): peak = 715.582 ; gain = 505.496
+Finished Technology Mapping : Time (s): cpu = 00:01:29 ; elapsed = 00:01:41 . Memory (MB): peak = 721.020 ; gain = 510.934
+Finished IO Insertion : Time (s): cpu = 00:01:30 ; elapsed = 00:01:42 . Memory (MB): peak = 721.020 ; gain = 510.934
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:30 ; elapsed = 00:01:42 . Memory (MB): peak = 721.020 ; gain = 510.934
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:30 ; elapsed = 00:01:42 . Memory (MB): peak = 721.020 ; gain = 510.934
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:30 ; elapsed = 00:01:42 . Memory (MB): peak = 721.020 ; gain = 510.934
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:30 ; elapsed = 00:01:42 . Memory (MB): peak = 721.020 ; gain = 510.934
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:30 ; elapsed = 00:01:42 . Memory (MB): peak = 721.020 ; gain = 510.934
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    18|
+|2     |LUT1    |    38|
+|3     |LUT2    |    18|
+|4     |LUT3    |   235|
+|5     |LUT4    |    41|
+|6     |LUT5    |    70|
+|7     |LUT6    |   106|
+|8     |SRL16E  |    18|
+|9     |SRLC32E |    47|
+|10    |FDRE    |   548|
+|11    |FDSE    |    51|
++------+--------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:30 ; elapsed = 00:01:42 . Memory (MB): peak = 721.020 ; gain = 510.934
+synth_design: Time (s): cpu = 00:01:27 ; elapsed = 00:01:34 . Memory (MB): peak = 728.086 ; gain = 466.367

@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun Mar 26 12:08:35 2017
+# Process ID: 5916
+# Current directory: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9128 C:\Users\kmd17\Documents\GitHub\Embedded_Systems_lab2_ARM\1.Basic Hardware-Software Platform\lab2_simple_arm.xpr
+# Log file: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/vivado.log
+# Journal file: C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.xpr}
+open_run impl_1
+file mkdir {C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.sdk}
+file copy -force {C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.runs/impl_1/Cortex_A9_wrapper.sysdef} {C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.sdk/Cortex_A9_wrapper.hdf}
+
+launch_sdk -workspace {C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.sdk} -hwspec {C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.sdk/Cortex_A9_wrapper.hdf}
+file copy -force {C:/Users/kmd17/Documents/GitHub/Embedded_Systems_lab2_ARM/1.Basic Hardware-Software Platform/lab2_simple_arm.runs/impl_1/Cortex_A9_wrapper.sysdef} C:/Users/kmd17/Desktop/Cortex_A9_wrapper.hdf
+
